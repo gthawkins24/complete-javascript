@@ -1,28 +1,34 @@
-// 'use strict';
+'use strict';
 
-function calcAge(birthYear) {
-  const age = 2037 - birthYear;
+// Functions
+// console.log(addDecl(2,3));
+// console.log(addExpr(2,3));
+// console.log(addArrow(2,3));
 
-  function printAge() {
-    const output = `${firstName}, you are ${age}, born in ${birthYear}.`;
-    console.log(output);
+// function addDecl(a,b) {
+//   return a + b;
+// };
 
-    if (birthYear >= 1981 && birthYear <=1996) {
-      var millenial = true;
-      const firstName = 'Steven';
-      const str = `Oh, and you're a millenial, ${firstName}`;
-      console.log(str);
+// const addExpr = function(a,b) {
+//   return a + b;
+// };
 
-      function add(a, b) {
-        return a + b;
-      }
-    }
-    console.log(add(2,3));
-  }
-  printAge();
+// var addArrow = (a,b) => a + b;
 
-  return age;
-}
+// Example
+if(!numProducts) deleteShoppingCart();
+console.log(numProducts);
 
-const firstName = 'Jonas';
-const test = calcAge(1991);
+var numProducts = 10;
+
+function deleteShoppingCart() {
+  console.log('All products deleted!');
+};
+
+var x = 1;
+let y = 2;
+const z = 3;
+
+console.log(x === window.x);
+console.log(x === window.y);
+console.log(x === window.z);
